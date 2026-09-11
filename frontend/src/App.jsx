@@ -87,6 +87,7 @@ export default function App() {
   };
 
   // Run Extraction via API
+  const API_URL = import.meta.env.VITE_API_URL;
   const handleExtract = async () => {
     if (!selectedFile) return;
 
@@ -97,9 +98,9 @@ export default function App() {
       const formData = new FormData();
       formData.append('file', selectedFile);
 
-      const response = await fetch('/extract', {
-        method: 'POST',
-        body: formData,
+      const response = await fetch(`${API_URL}/extract`, {
+      method: 'POST',
+      body: formData,
       });
 
       if (!response.ok) {
