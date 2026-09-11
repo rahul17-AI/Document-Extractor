@@ -1,0 +1,6 @@
+{
+  "name": "Comply Filing Extractor",
+  "description": "Extract and structure headings and body text from compliance filing documents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
